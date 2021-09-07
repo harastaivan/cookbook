@@ -1,23 +1,26 @@
-import React from 'react';
+import { Switch, Route, Redirect, BrowserRouter as Router } from 'react-router-dom'
+import AddRecipe from './AddRecipe'
+import { addRecipe, recipe, recipes, root } from './links'
+import Recipe from './Recipe'
+import Recipes from './Recipes'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Router>
+            <Switch>
+                <Redirect exact from={root} to={recipes} />
+                <Route path={recipes}>
+                    <Recipes />
+                </Route>
+                <Route path={recipe}>
+                    <Recipe />
+                </Route>
+                <Route path={addRecipe}>
+                    <AddRecipe />
+                </Route>
+            </Switch>
+        </Router>
+    )
 }
 
-export default App;
+export default App
