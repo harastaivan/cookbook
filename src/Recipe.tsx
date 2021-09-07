@@ -1,7 +1,14 @@
 import React from 'react'
+import { useParams } from 'react-router'
+
+type Params = {
+    id: string
+}
 
 const Recipe = () => {
-    return <div>Recipe</div>
+    const { id } = useParams<Params>()
+
+    return <div>Recipe {id}</div>
 }
 
 export default Recipe

@@ -8,16 +8,16 @@ function App() {
     return (
         <Router>
             <Switch>
-                <Redirect exact from={root} to={recipes} />
-                <Route path={recipes}>
-                    <Recipes />
-                </Route>
                 <Route path={recipe}>
                     <Recipe />
                 </Route>
                 <Route path={addRecipe}>
                     <AddRecipe />
                 </Route>
+                <Route path={recipes}>
+                    <Recipes />
+                </Route>
+                <Redirect from={root} to={recipes} />
             </Switch>
         </Router>
     )
