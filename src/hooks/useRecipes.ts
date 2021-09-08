@@ -27,7 +27,8 @@ const useRecipes = (): UseRecipes => {
         setError(null)
         try {
             const recipes = await getRecipes()
-            const adjustedRecipes = recipes.map(randomizeScore)
+            const moreRecipes = [...recipes, ...recipes, ...recipes]
+            const adjustedRecipes = moreRecipes.map(randomizeScore)
             setRecipes(adjustedRecipes)
         } catch (err) {
             setError((err as AxiosError).message)

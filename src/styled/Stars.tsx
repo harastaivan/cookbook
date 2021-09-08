@@ -4,7 +4,7 @@ type Props = {
     score: number
     primaryColor: string
     secondaryColor: string
-    starSize: number
+    starSize: string
 }
 
 // Source: https://codepen.io/FredGenkin/pen/eaXYGV
@@ -13,7 +13,7 @@ const Stars = styled.div<Props>`
     --percent: ${(props) => props.score}%;
 
     display: inline-block;
-    font-size: ${(props) => props.starSize}px;
+    font-size: ${(props) => props.starSize};
     font-family: Times;
     line-height: 1;
 
