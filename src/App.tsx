@@ -1,8 +1,8 @@
 import { Switch, Route, Redirect, BrowserRouter as Router } from 'react-router-dom'
-import AddRecipe from './AddRecipe'
 import { addRecipe, recipe, recipes, root } from './links'
-import Recipe from './Recipe'
-import Recipes from './Recipes'
+import AddRecipe from './pages/AddRecipe'
+import Recipe from './pages/Recipe'
+import Recipes from './pages/Recipes'
 
 function App() {
     return (

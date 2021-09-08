@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
-import useRecipes from './hooks/useRecipes'
-import { getRecipe } from './links'
+import useRecipes from '../hooks/useRecipes'
+import { getRecipe } from '../links'
 
 const Recipes = () => {
     const { loading, error, recipes } = useRecipes()

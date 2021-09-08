@@ -1,6 +1,5 @@
-import React from 'react'
 import { useParams } from 'react-router'
-import useRecipe from './hooks/useRecipe'
+import useRecipe from '../hooks/useRecipe'
 
 type Params = {
     id: string
