@@ -1,5 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router'
+import useRecipe from './hooks/useRecipe'
 
 type Params = {
     id: string
@@ -7,8 +8,16 @@ type Params = {
 
 const Recipe = () => {
     const { id } = useParams<Params>()
+    const { loading, error, recipe } = useRecipe(id)
 
-    return <div>Recipe {id}</div>
+    return (
+        <div>
+            <h1>Recipe {id}</h1>
+            {loading && 'Loading...'}
+            {!loading && error && 'Error' + error}
+            {!loading && !error && <pre>{JSON.stringify(recipe)}</pre>}
+        </div>
+    )
 }
 
 export default Recipe
