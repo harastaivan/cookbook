@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import AppBar from '../components/AppBar'
 import useRecipes from '../hooks/useRecipes'
 import { getRecipe } from '../links'
 
@@ -6,8 +7,7 @@ const Recipes = () => {
     const { loading, error, recipes } = useRecipes()
 
     return (
-        <div>
-            <h1>Recipes</h1>
+            <AppBar title="Recepty" />
             {loading && 'Loading...'}
             {!loading && error && 'Error' + error}
             {!loading && !error && (
