@@ -7,4 +7,8 @@ export default styled(Typography)`
     z-index: 10;
     margin: 1.2em 1em;
     color: #ffffff;
+    @media (min-width: 768px) {
+        margin: 1.2em 5em;
+        font-size: 2rem;
+    }
 `
