@@ -1,6 +1,6 @@
 import { AppBar, Toolbar } from '@material-ui/core';
 import { useHistory } from 'react-router';
-import { addRecipe } from '../links';
+import config from 'config';
 import Button from '../styled/AppBar/Button';
 import Title from '../styled/AppBar/Title';
 import AddIcon from '../styled/AppBar/AddIcon';
@@ -13,7 +13,7 @@ const AppBarComponent: React.FC<Props> = ({ title }: Props) => {
     const history = useHistory();
 
     const goToAddRecipe = () => {
-        history.push(addRecipe);
+        history.push(config.routes.addRecipe);
     };
 
     return (

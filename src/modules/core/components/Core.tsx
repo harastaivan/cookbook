@@ -4,6 +4,9 @@ import * as serviceWorker from 'serviceWorker';
 
 import * as config from '../config';
 
+import { StylesProvider, ThemeProvider } from '@material-ui/core';
+import theme from '../../../theme';
+
 import { Fela } from '../modules/fela';
 import { Redux } from '../modules/redux';
 import { Router } from '../modules/router';
@@ -28,9 +31,13 @@ function Core({ children }: CoreProps) {
     return (
         <Redux>
             <Fela>
-                <Router>
-                    <Enhancers>{children}</Enhancers>
-                </Router>
+                <ThemeProvider theme={theme}>
+                    <StylesProvider injectFirst>
+                        <Router>
+                            <Enhancers>{children}</Enhancers>
+                        </Router>
+                    </StylesProvider>
+                </ThemeProvider>
             </Fela>
         </Redux>
     );

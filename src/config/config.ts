@@ -19,6 +19,10 @@ const defaults = {
         // @use-auth-module-begin
         auth: '/auth',
         // @use-auth-module-end
+        recipes: '/recipes',
+        recipe: '/recipe/:id',
+        recipeById: (id: string) => `/recipe/${id}`,
+        addRecipe: '/add-recipe',
     },
     forms: {
         login: 'loginForm',

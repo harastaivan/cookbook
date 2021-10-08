@@ -1,7 +1,7 @@
 import { Typography } from '@material-ui/core';
 import ReadingTimeIcon from '@material-ui/icons/Schedule';
 
-import { getRecipe } from '../../links';
+import config from 'config';
 import { white, purple } from '../../colors';
 import { SimpleRecipe } from '../../types';
 import Stars from '../../components/Stars';
@@ -16,7 +16,7 @@ import ReadingTime from '../../styled/Recipes/ReadingTime';
 
 const Recipe: React.FC<SimpleRecipe> = ({ id, name, duration, score }: SimpleRecipe) => {
     return (
-        <Link to={getRecipe(id)}>
+        <Link to={config.routes.recipeById(id)}>
             <RecipeWrapper key={id}>
                 <Image src={recipeImage} />
                 <TextWrapper>

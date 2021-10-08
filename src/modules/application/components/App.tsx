@@ -4,12 +4,22 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import { Login } from 'modules/auth';
 
 import config from 'config';
+import RecipesPage from 'pages/Recipes';
+import RecipeDetail from 'pages/RecipeDetail';
+import AddRecipe from 'pages/AddRecipe';
 
 const routes = [
     {
-        path: config.routes.home,
-        render: () => 'Home Page',
-        exact: true,
+        path: config.routes.recipes,
+        render: () => <RecipesPage />,
+    },
+    {
+        path: config.routes.recipe,
+        render: () => <RecipeDetail />,
+    },
+    {
+        path: config.routes.addRecipe,
+        render: () => <AddRecipe />,
     },
     // @use-auth-module-begin
     {
@@ -18,7 +28,7 @@ const routes = [
     },
     // @use-auth-module-end
     {
-        render: () => <Redirect to="/" />,
+        render: () => <Redirect from="/" to={config.routes.recipes} />,
     },
 ];
 

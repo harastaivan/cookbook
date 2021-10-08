@@ -2,7 +2,7 @@ import { useHistory } from 'react-router';
 import { Toolbar, Typography } from '@material-ui/core';
 import ReadingTimeIcon from '@material-ui/icons/Schedule';
 import { Recipe as Props } from '../../types';
-import { addRecipe } from '../../links';
+import config from 'config';
 import { offWhite, purple, white } from '../../colors';
 import recipeImage from '../../images/ackee.png';
 
@@ -34,7 +34,7 @@ const Recipe: React.FC<Props> = ({ name, score, duration, description, ingredien
     };
 
     const goToAddRecipe = () => {
-        history.push(addRecipe);
+        history.push(config.routes.addRecipe);
     };
 
     return (
