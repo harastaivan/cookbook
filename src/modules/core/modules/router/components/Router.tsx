@@ -6,8 +6,6 @@ import { history } from '../config';
 
 type RouterProps = { children: ReactNode };
 
-const Router = ({ children }: RouterProps) => (
-    <ConnectedRouter history={history}>{children}</ConnectedRouter>
-);
+const Router = ({ children }: RouterProps) => <ConnectedRouter history={history}>{children}</ConnectedRouter>;
 
 export default Router;

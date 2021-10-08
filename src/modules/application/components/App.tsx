@@ -1,9 +1,9 @@
-import React from "react";
-import { Switch, Route, Redirect } from "react-router-dom";
+import React from 'react';
+import { Switch, Route, Redirect } from 'react-router-dom';
 
-import { Login } from "modules/auth";
+import { Login } from 'modules/auth';
 
-import config from "config";
+import config from 'config';
 
 const routes = [
     {

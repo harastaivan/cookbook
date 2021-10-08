@@ -1,7 +1,7 @@
-import felaPluginValidator from "fela-plugin-validator";
-import felaPluginUnit from "fela-plugin-unit";
-import felaPluginNamedKeys from "fela-plugin-named-keys";
-import felaPluginFriendlyPseudoClass from "fela-plugin-friendly-pseudo-class";
+import felaPluginValidator from 'fela-plugin-validator';
+import felaPluginUnit from 'fela-plugin-unit';
+import felaPluginNamedKeys from 'fela-plugin-named-keys';
+import felaPluginFriendlyPseudoClass from 'fela-plugin-friendly-pseudo-class';
 
 import namedKeys from './namedKeys';
 

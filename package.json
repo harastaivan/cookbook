@@ -1,129 +1,129 @@
 {
-  "name": "ackee-cookbook-2",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@ackee/antonio-auth": "4.0.x",
-    "@ackee/antonio-core": "4.0.x",
-    "@ackee/antonio-utils": "4.0.x",
-    "@ackee/chris": "2.0.0",
-    "@ackee/jerome": "4.1",
-    "@ackee/lucas": "0.4.0",
-    "@ackee/mateus": "1.0.0",
-    "@ackee/petrus": "5.2.x",
-    "@ackee/react-scripts": "2.0.0",
-    "@ackee/redux-utils": "2.x",
-    "@material-ui/core": "^4.12.3",
-    "@material-ui/icons": "^4.11.2",
-    "@sentry/browser": "5.x",
-    "@types/jest": "^26.0.15",
-    "@types/lodash": "^4.14.149",
-    "@types/node": "^12.0.0",
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
-    "@types/react-redux": "^7.1.6",
-    "@types/react-router-dom": "^5.1.3",
-    "@types/redux-form": "^8.2.0",
-    "@types/styled-components": "^5.1.15",
-    "antd": "3.x",
-    "connected-react-router": "6.8.x",
-    "fela": "11.x",
-    "fela-monolithic": "11.x",
-    "fela-plugin-friendly-pseudo-class": "11.x",
-    "fela-plugin-named-keys": "11.x",
-    "fela-plugin-unit": "11.x",
-    "history": "4.x",
-    "lodash": "4.17.x",
-    "loglevel": "1.x",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-fela": "11.x",
-    "react-intl": "3.x",
-    "react-redux": "7.x",
-    "react-router-dom": "5.x",
-    "redux": "4.x",
-    "redux-form": "8.x",
-    "redux-saga": "1.x",
-    "redux-sentry-middleware": "0.x",
-    "reselect": "4.x",
-    "styled-components": "^5.3.1",
-    "web-vitals": "^1.0.1"
-  },
-  "scripts": {
-    "start": "export REACT_APP_BUILD_ENV=development; react-scripts start",
-    "build": "yarn build:development",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "build:development": "export REACT_APP_BUILD_ENV=development; react-scripts build",
-    "build:stage": "export REACT_APP_BUILD_ENV=stage; react-scripts build",
-    "build:production": "export REACT_APP_BUILD_ENV=production; react-scripts build",
-    "build:master": "yarn build:production",
-    "test:watch": "export REACT_APP_BUILD_ENV=test; react-scripts test",
-    "circular-modules": "ackee-react-scripts check-circular-modules --ignore-index-files",
-    "localize": "source .env.local; lokse update",
-    "localizations": "lokse open",
-    "analyze-bundle": "yarn build:production --stats && webpack-bundle-analyzer build/bundle-stats.json",
-    "ci-test": "export REACT_APP_BUILD_ENV=test; export CI=true; react-scripts test --env=jsdom",
-    "ci-circular-modules": "yarn circular-modules",
-    "ci-lighthouse": "./node_modules/@lhci/cli/src/cli.js autorun",
-    "release": "yarn version",
-    "version": "yarn changelog && code CHANGELOG.md --wait && git add CHANGELOG.md",
-    "changelog": "git fetch origin && npx gitmoji-changelog"
-  },
-  "browserslist": {
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ],
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not ie <= 11",
-      "not op_mini all",
-      "not safari <= 8"
-    ]
-  },
-  "resolutions": {
-    "dot-prop": "^6.0.1",
-    "http-proxy": "^1.18.1",
-    "elliptic": "^6.5.3",
-    "node-forge": "^0.10.0",
-    "serialize-javascript": "^3.1.0",
-    "object-path": "^0.11.5"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "yarn circular-modules"
+    "name": "ackee-cookbook-2",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@ackee/antonio-auth": "4.0.x",
+        "@ackee/antonio-core": "4.0.x",
+        "@ackee/antonio-utils": "4.0.x",
+        "@ackee/chris": "2.0.0",
+        "@ackee/jerome": "4.1",
+        "@ackee/lucas": "0.4.0",
+        "@ackee/mateus": "1.0.0",
+        "@ackee/petrus": "5.2.x",
+        "@ackee/react-scripts": "2.0.0",
+        "@ackee/redux-utils": "2.x",
+        "@material-ui/core": "^4.12.3",
+        "@material-ui/icons": "^4.11.2",
+        "@sentry/browser": "5.x",
+        "@types/jest": "^26.0.15",
+        "@types/lodash": "^4.14.149",
+        "@types/node": "^12.0.0",
+        "@types/react": "^17.0.0",
+        "@types/react-dom": "^17.0.0",
+        "@types/react-redux": "^7.1.6",
+        "@types/react-router-dom": "^5.1.3",
+        "@types/redux-form": "^8.2.0",
+        "@types/styled-components": "^5.1.15",
+        "antd": "3.x",
+        "connected-react-router": "6.8.x",
+        "fela": "11.x",
+        "fela-monolithic": "11.x",
+        "fela-plugin-friendly-pseudo-class": "11.x",
+        "fela-plugin-named-keys": "11.x",
+        "fela-plugin-unit": "11.x",
+        "history": "4.x",
+        "lodash": "4.17.x",
+        "loglevel": "1.x",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-fela": "11.x",
+        "react-intl": "3.x",
+        "react-redux": "7.x",
+        "react-router-dom": "5.x",
+        "redux": "4.x",
+        "redux-form": "8.x",
+        "redux-saga": "1.x",
+        "redux-sentry-middleware": "0.x",
+        "reselect": "4.x",
+        "styled-components": "^5.3.1",
+        "web-vitals": "^1.0.1"
+    },
+    "scripts": {
+        "start": "export REACT_APP_BUILD_ENV=development; react-scripts start",
+        "build": "yarn build:development",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "build:development": "export REACT_APP_BUILD_ENV=development; react-scripts build",
+        "build:stage": "export REACT_APP_BUILD_ENV=stage; react-scripts build",
+        "build:production": "export REACT_APP_BUILD_ENV=production; react-scripts build",
+        "build:master": "yarn build:production",
+        "test:watch": "export REACT_APP_BUILD_ENV=test; react-scripts test",
+        "circular-modules": "ackee-react-scripts check-circular-modules --ignore-index-files",
+        "localize": "source .env.local; lokse update",
+        "localizations": "lokse open",
+        "analyze-bundle": "yarn build:production --stats && webpack-bundle-analyzer build/bundle-stats.json",
+        "ci-test": "export REACT_APP_BUILD_ENV=test; export CI=true; react-scripts test --env=jsdom",
+        "ci-circular-modules": "yarn circular-modules",
+        "ci-lighthouse": "./node_modules/@lhci/cli/src/cli.js autorun",
+        "release": "yarn version",
+        "version": "yarn changelog && code CHANGELOG.md --wait && git add CHANGELOG.md",
+        "changelog": "git fetch origin && npx gitmoji-changelog"
+    },
+    "browserslist": {
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ],
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not ie <= 11",
+            "not op_mini all",
+            "not safari <= 8"
+        ]
+    },
+    "resolutions": {
+        "dot-prop": "^6.0.1",
+        "http-proxy": "^1.18.1",
+        "elliptic": "^6.5.3",
+        "node-forge": "^0.10.0",
+        "serialize-javascript": "^3.1.0",
+        "object-path": "^0.11.5"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged",
+            "pre-push": "yarn circular-modules"
+        }
+    },
+    "lint-staged": {
+        "*.{js,jsx,json,scss,less,css,md}": [
+            "prettier --config ./prettier.config.js --write"
+        ],
+        "**/*.{png,jpeg,jpg,gif,svg,webp}": [
+            "imagemin-lint-staged"
+        ]
+    },
+    "jest": {
+        "testPathIgnorePatterns": [
+            "<rootDir>/node_modules",
+            "<rootDir>/src/config/config.test.js"
+        ]
+    },
+    "devDependencies": {
+        "@lhci/cli": "0.6.0",
+        "@testing-library/jest-dom": "5.x",
+        "@testing-library/react": "10.x",
+        "@testing-library/user-event": "10.x",
+        "fela-plugin-prefixer": "11.x",
+        "fela-plugin-validator": "11.x",
+        "gitmoji-changelog": "2.x",
+        "husky": "4.x",
+        "imagemin-lint-staged": "0.x",
+        "lint-staged": "10.x",
+        "lokse": "1.x",
+        "typescript": "^4.1.2"
     }
-  },
-  "lint-staged": {
-    "*.{js,jsx,json,scss,less,css,md}": [
-      "prettier --config ./prettier.config.js --write"
-    ],
-    "**/*.{png,jpeg,jpg,gif,svg,webp}": [
-      "imagemin-lint-staged"
-    ]
-  },
-  "jest": {
-    "testPathIgnorePatterns": [
-      "<rootDir>/node_modules",
-      "<rootDir>/src/config/config.test.js"
-    ]
-  },
-  "devDependencies": {
-    "@lhci/cli": "0.6.0",
-    "@testing-library/jest-dom": "5.x",
-    "@testing-library/react": "10.x",
-    "@testing-library/user-event": "10.x",
-    "fela-plugin-prefixer": "11.x",
-    "fela-plugin-validator": "11.x",
-    "gitmoji-changelog": "2.x",
-    "husky": "4.x",
-    "imagemin-lint-staged": "0.x",
-    "lint-staged": "10.x",
-    "lokse": "1.x",
-    "typescript": "^4.1.2"
-  }
 }

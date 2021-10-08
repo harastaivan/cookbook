@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export default styled.div`
     padding: 2em;
@@ -6,4 +6,4 @@ export default styled.div`
     @media (min-width: 768px) {
         padding: 2em 10em;
     }
-`
+`;

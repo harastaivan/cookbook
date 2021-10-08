@@ -1,5 +1,5 @@
-import { LoginFormField } from "../../config";
-import type { LoginFormValues } from "../../config";
+import { LoginFormField } from '../../config';
+import type { LoginFormValues } from '../../config';
 
 export default function validate(values: LoginFormValues, { intl }) {
     const errors: Partial<Record<LoginFormField, string>> = {};

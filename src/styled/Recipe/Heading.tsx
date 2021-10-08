@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { Typography } from '@material-ui/core'
+import styled from 'styled-components';
+import { Typography } from '@material-ui/core';
 
 export default styled(Typography)`
     margin-top: 1em;
@@ -8,4 +8,4 @@ export default styled(Typography)`
         font-size: 1.4rem;
         font-weight: 500;
     }
-`
+`;

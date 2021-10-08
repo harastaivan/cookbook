@@ -1,5 +1,5 @@
-import * as Consts from "constants/index";
-import { resets, vendors, theme } from "styles";
+import * as Consts from 'constants/index';
+import { resets, vendors, theme } from 'styles';
 
 import plugins from './plugins';
 import enhancers from './enhancers';

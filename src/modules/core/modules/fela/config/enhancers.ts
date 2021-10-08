@@ -1,4 +1,4 @@
-import felaMonolithic from "fela-monolithic";
+import felaMonolithic from 'fela-monolithic';
 
 const enhancers = [
     process.env.NODE_ENV === 'development' &&

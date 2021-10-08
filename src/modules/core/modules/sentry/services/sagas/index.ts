@@ -1,6 +1,6 @@
-import * as sagaEffects from "redux-saga/effects";
-import * as Sentry from "@sentry/browser";
-import { actionTypes } from "@ackee/lucas";
+import * as sagaEffects from 'redux-saga/effects';
+import * as Sentry from '@sentry/browser';
+import { actionTypes } from '@ackee/lucas';
 
 import { setSentryEventId } from '../actions';
 
@@ -28,7 +28,7 @@ function* errorHandler(action) {
     yield put(setSentryEventId(eventId));
 }
 
-export default function*() {
+export default function* () {
     // LOG_ERROR is dispatched by the errorBoundary HOC (in componentDidCatched method)
     yield takeEvery(actionTypes.logging.LOG_ERROR, errorHandler);
 }

@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { Link } from 'react-router-dom'
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export default styled(Link)`
     display: block;
@@ -8,4 +8,4 @@ export default styled(Link)`
     &:first-child {
         border-top: none;
     }
-`
+`;

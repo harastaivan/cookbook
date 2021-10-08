@@ -1,5 +1,5 @@
-import { createSelector } from "reselect";
-import * as Petrus from "@ackee/petrus";
+import { createSelector } from 'reselect';
+import * as Petrus from '@ackee/petrus';
 import type { PetrusEntitiesState, User } from '../../types';
 
 export const authUserSelector = createSelector(Petrus.entitiesSelector, (auth: PetrusEntitiesState) => auth.user);

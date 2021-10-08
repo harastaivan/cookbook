@@ -1,15 +1,15 @@
-import { useParams } from 'react-router'
-import Recipe from '../components/RecipeDetail/Recipe'
-import Spinner from '../components/Spinner'
-import useRecipe from '../hooks/useRecipe'
+import { useParams } from 'react-router';
+import Recipe from '../components/RecipeDetail/Recipe';
+import Spinner from '../components/Spinner';
+import useRecipe from '../hooks/useRecipe';
 
 type Params = {
-    id: string
-}
+    id: string;
+};
 
 const RecipeDetail = () => {
-    const { id } = useParams<Params>()
-    const { loading, error, recipe } = useRecipe(id)
+    const { id } = useParams<Params>();
+    const { loading, error, recipe } = useRecipe(id);
 
     return (
         <>
@@ -17,7 +17,7 @@ const RecipeDetail = () => {
             {!loading && error && 'Error' + error}
             {!loading && !error && recipe && <Recipe {...recipe} />}
         </>
-    )
-}
+    );
+};
 
-export default RecipeDetail
+export default RecipeDetail;

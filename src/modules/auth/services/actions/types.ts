@@ -1,4 +1,4 @@
-import { createAsyncType } from "@ackee/redux-utils";
+import { createAsyncType } from '@ackee/redux-utils';
 
 const asyncType = createAsyncType({
     modulePrefix: 'auth',

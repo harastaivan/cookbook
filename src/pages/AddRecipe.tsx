@@ -1,5 +1,5 @@
 const AddRecipe = () => {
-    return <div>AddRecipe</div>
-}
+    return <div>AddRecipe</div>;
+};
 
-export default AddRecipe
+export default AddRecipe;

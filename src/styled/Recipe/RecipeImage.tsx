@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export default styled.img`
     width: 100%;
@@ -9,4 +9,4 @@ export default styled.img`
     @media (min-width: 768px) {
         top: -50%;
     }
-`
+`;

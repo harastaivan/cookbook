@@ -1,43 +1,43 @@
 {
-  "hosting": [
-    {
-      "target": "development",
-      "public": "build",
-      "cleanUrls": true,
-      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
-      "rewrites": [
+    "hosting": [
         {
-          "source": "**",
-          "destination": "/index.html"
-        }
-      ]
-    },
-    {
-      "target": "stage",
-      "public": "build",
-      "cleanUrls": true,
-      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
-      "rewrites": [
+            "target": "development",
+            "public": "build",
+            "cleanUrls": true,
+            "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+            "rewrites": [
+                {
+                    "source": "**",
+                    "destination": "/index.html"
+                }
+            ]
+        },
         {
-          "source": "**",
-          "function":"authorizeAccess"
-        }
-      ]
-    },
-    {
-      "target": "master",
-      "public": "build",
-      "cleanUrls": true,
-      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
-      "rewrites": [
+            "target": "stage",
+            "public": "build",
+            "cleanUrls": true,
+            "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+            "rewrites": [
+                {
+                    "source": "**",
+                    "function": "authorizeAccess"
+                }
+            ]
+        },
         {
-          "source": "**",
-          "destination": "/index.html"
+            "target": "master",
+            "public": "build",
+            "cleanUrls": true,
+            "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+            "rewrites": [
+                {
+                    "source": "**",
+                    "destination": "/index.html"
+                }
+            ]
         }
-      ]
+    ],
+    "functions": {
+        "runtime": "nodejs12"
     }
-  ],
-  "functions": {
-    "runtime": "nodejs12"
-  }
 }

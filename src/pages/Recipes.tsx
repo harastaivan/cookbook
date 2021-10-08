@@ -1,6 +1,6 @@
-import Layout from '../styled/Layout'
-import AppBar from '../components/AppBar'
-import Recipes from '../components/Recipes/Recipes'
+import Layout from '../styled/Layout';
+import AppBar from '../components/AppBar';
+import Recipes from '../components/Recipes/Recipes';
 
 const RecipesPage = () => {
     return (
@@ -8,7 +8,7 @@ const RecipesPage = () => {
             <AppBar title="Recepty" />
             <Recipes />
         </Layout>
-    )
-}
+    );
+};
 
-export default RecipesPage
+export default RecipesPage;

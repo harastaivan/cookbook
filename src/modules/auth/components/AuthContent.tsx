@@ -1,7 +1,7 @@
-import React from "react";
-import { FormattedMessage } from "react-intl";
-import { useDispatch, useSelector } from "react-redux";
-import * as Petrus from "@ackee/petrus";
+import React from 'react';
+import { FormattedMessage } from 'react-intl';
+import { useDispatch, useSelector } from 'react-redux';
+import * as Petrus from '@ackee/petrus';
 
 import { userEmailSelector } from '../services/selectors';
 

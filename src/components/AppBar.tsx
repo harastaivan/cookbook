@@ -1,20 +1,20 @@
-import { AppBar, Toolbar } from '@material-ui/core'
-import { useHistory } from 'react-router'
-import { addRecipe } from '../links'
-import Button from '../styled/AppBar/Button'
-import Title from '../styled/AppBar/Title'
-import AddIcon from '../styled/AppBar/AddIcon'
+import { AppBar, Toolbar } from '@material-ui/core';
+import { useHistory } from 'react-router';
+import { addRecipe } from '../links';
+import Button from '../styled/AppBar/Button';
+import Title from '../styled/AppBar/Title';
+import AddIcon from '../styled/AppBar/AddIcon';
 
 type Props = {
-    title: string
-}
+    title: string;
+};
 
 const AppBarComponent: React.FC<Props> = ({ title }: Props) => {
-    const history = useHistory()
+    const history = useHistory();
 
     const goToAddRecipe = () => {
-        history.push(addRecipe)
-    }
+        history.push(addRecipe);
+    };
 
     return (
         <AppBar position="static">
@@ -25,7 +25,7 @@ const AppBarComponent: React.FC<Props> = ({ title }: Props) => {
                 </Button>
             </Toolbar>
         </AppBar>
-    )
-}
+    );
+};
 
-export default AppBarComponent
+export default AppBarComponent;

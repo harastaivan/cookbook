@@ -1,5 +1,5 @@
-import * as Petrus from "@ackee/petrus";
-import * as sagaEffects from "redux-saga/effects";
+import * as Petrus from '@ackee/petrus';
+import * as sagaEffects from 'redux-saga/effects';
 
 import { types } from '../actions';
 
@@ -23,6 +23,6 @@ function* handleLoginForm(action) {
     yield action.stopSubmit(payload);
 }
 
-export default function*() {
+export default function* () {
     yield takeEvery(types.LOGIN_FORM, handleLoginForm);
 }

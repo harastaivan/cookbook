@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export default styled.div`
     background: #0000ff;
@@ -9,4 +9,4 @@ export default styled.div`
     align-items: center;
     gap: 1em;
     padding: 3em 0 4em 0;
-`
+`;

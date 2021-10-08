@@ -1,40 +1,40 @@
-import { AxiosError } from 'axios'
-import { useEffect, useState } from 'react'
-import { getRecipe } from '../api/recipes'
-import { Recipe } from '../types'
+import { AxiosError } from 'axios';
+import { useEffect, useState } from 'react';
+import { getRecipe } from '../api/recipes';
+import { Recipe } from '../types';
 
 type UseRecipe = {
-    loading: boolean
-    error: string | null
-    recipe: Recipe | null
-}
+    loading: boolean;
+    error: string | null;
+    recipe: Recipe | null;
+};
 
 const useRecipe = (id: string): UseRecipe => {
-    const [loading, setLoading] = useState(false)
-    const [error, setError] = useState<string | null>(null)
-    const [recipe, setRecipe] = useState<Recipe | null>(null)
+    const [loading, setLoading] = useState(false);
+    const [error, setError] = useState<string | null>(null);
+    const [recipe, setRecipe] = useState<Recipe | null>(null);
 
     const loadRecipe = async (id: string) => {
-        setLoading(true)
-        setError(null)
+        setLoading(true);
+        setError(null);
         try {
-            const recipe = await getRecipe(id)
-            setRecipe(recipe)
+            const recipe = await getRecipe(id);
+            setRecipe(recipe);
         } catch (err) {
-            setError((err as AxiosError).message)
+            setError((err as AxiosError).message);
         }
-        setLoading(false)
-    }
+        setLoading(false);
+    };
 
     useEffect(() => {
-        loadRecipe(id)
-    }, [id])
+        loadRecipe(id);
+    }, [id]);
 
     return {
         loading,
         error,
         recipe,
-    }
-}
+    };
+};
 
-export default useRecipe
+export default useRecipe;

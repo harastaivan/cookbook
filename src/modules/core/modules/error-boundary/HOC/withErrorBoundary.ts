@@ -1,4 +1,4 @@
-import { errorBoundary } from "@ackee/lucas";
+import { errorBoundary } from '@ackee/lucas';
 
 import ErrorMessage from '../components/ErrorMessage';
 

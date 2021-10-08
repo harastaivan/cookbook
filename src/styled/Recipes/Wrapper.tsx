@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export default styled.div`
     padding: 0 2em;
@@ -7,4 +7,4 @@ export default styled.div`
         margin: auto;
         max-width: 600px;
     }
-`
+`;

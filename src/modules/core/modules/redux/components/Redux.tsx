@@ -4,7 +4,9 @@ import { Provider } from 'react-redux';
 
 import { configureStore } from '../config';
 
-interface ReduxProps { children: ReactNode };
+interface ReduxProps {
+    children: ReactNode;
+}
 
 const Redux = ({ children }: ReduxProps) => {
     const store = configureStore();

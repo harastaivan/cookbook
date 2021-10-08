@@ -1,10 +1,10 @@
-import { compose } from "redux";
-import { reduxForm } from "redux-form";
-import { connect } from "react-redux";
-import { injectIntl } from "react-intl";
-import { submitForm } from "@ackee/mateus";
+import { compose } from 'redux';
+import { reduxForm } from 'redux-form';
+import { connect } from 'react-redux';
+import { injectIntl } from 'react-intl';
+import { submitForm } from '@ackee/mateus';
 
-import config from "config";
+import config from 'config';
 
 import LoginForm from '../../components/LoginForm';
 import { loginForm } from '../../services/actions';

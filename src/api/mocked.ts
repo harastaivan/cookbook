@@ -1,4 +1,4 @@
-import { Recipe } from '../types'
+import { Recipe } from '../types';
 
 export const getMockedRecipe = (): Recipe => ({
     name: 'Ackee and Saltfish',
@@ -22,4 +22,4 @@ export const getMockedRecipe = (): Recipe => ({
     info: 'Simple but fast and furious',
     id: '58777f22b23541fc058c789f',
     score: 70,
-})
+});

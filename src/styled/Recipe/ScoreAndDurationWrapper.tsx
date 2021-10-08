@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export default styled.div`
     background: #ff00ff;
@@ -10,4 +10,4 @@ export default styled.div`
     @media (min-width: 768px) {
         padding: 1em 10em;
     }
-`
+`;

@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 import type { ReactNode } from 'react';
-import * as serviceWorker from "serviceWorker";
+import * as serviceWorker from 'serviceWorker';
 
 import * as config from '../config';
 

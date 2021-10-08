@@ -1,18 +1,18 @@
-import { Typography } from '@material-ui/core'
-import ReadingTimeIcon from '@material-ui/icons/Schedule'
+import { Typography } from '@material-ui/core';
+import ReadingTimeIcon from '@material-ui/icons/Schedule';
 
-import { getRecipe } from '../../links'
-import { white, purple } from '../../colors'
-import { SimpleRecipe } from '../../types'
-import Stars from '../../components/Stars'
-import recipeImage from '../../images/ackee.png'
+import { getRecipe } from '../../links';
+import { white, purple } from '../../colors';
+import { SimpleRecipe } from '../../types';
+import Stars from '../../components/Stars';
+import recipeImage from '../../images/ackee.png';
 
-import Link from '../../styled/Recipes/Link'
-import RecipeWrapper from '../../styled/Recipes/RecipeWrapper'
-import Image from '../../styled/Recipes/Image'
-import TextWrapper from '../../styled/Recipes/TextWrapper'
-import Title from '../../styled/Recipes/Title'
-import ReadingTime from '../../styled/Recipes/ReadingTime'
+import Link from '../../styled/Recipes/Link';
+import RecipeWrapper from '../../styled/Recipes/RecipeWrapper';
+import Image from '../../styled/Recipes/Image';
+import TextWrapper from '../../styled/Recipes/TextWrapper';
+import Title from '../../styled/Recipes/Title';
+import ReadingTime from '../../styled/Recipes/ReadingTime';
 
 const Recipe: React.FC<SimpleRecipe> = ({ id, name, duration, score }: SimpleRecipe) => {
     return (
@@ -31,7 +31,7 @@ const Recipe: React.FC<SimpleRecipe> = ({ id, name, duration, score }: SimpleRec
                 </TextWrapper>
             </RecipeWrapper>
         </Link>
-    )
-}
+    );
+};
 
-export default Recipe
+export default Recipe;

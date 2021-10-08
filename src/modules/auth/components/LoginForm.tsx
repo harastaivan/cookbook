@@ -1,8 +1,8 @@
-import React from "react";
-import { Form } from "redux-form";
-import { Button } from "antd";
-import { TextField } from "@ackee/mateus";
-import { FormattedMessage } from "react-intl";
+import React from 'react';
+import { Form } from 'redux-form';
+import { Button } from 'antd';
+import { TextField } from '@ackee/mateus';
+import { FormattedMessage } from 'react-intl';
 
 interface LoginFormProps {
     handleSubmit: () => void;

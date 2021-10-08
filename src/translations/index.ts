@@ -1,3 +1,3 @@
-import cs from './cs.json'
+import cs from './cs.json';
 
-export { cs }
+export { cs };

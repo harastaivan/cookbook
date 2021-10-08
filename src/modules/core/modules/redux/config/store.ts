@@ -1,8 +1,8 @@
-import { createStore } from "redux";
+import { createStore } from 'redux';
 import type { Store } from 'redux';
-import { END } from "redux-saga";
+import { END } from 'redux-saga';
 
-import * as Consts from "constants/index";
+import * as Consts from 'constants/index';
 
 import rootReducer from '../services/reducer';
 import rootSaga from '../services/saga';

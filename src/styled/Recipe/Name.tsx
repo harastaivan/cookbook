@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { Typography } from '@material-ui/core'
+import styled from 'styled-components';
+import { Typography } from '@material-ui/core';
 
 export default styled(Typography)`
     position: absolute;
@@ -11,4 +11,4 @@ export default styled(Typography)`
         margin: 1.2em 5em;
         font-size: 2rem;
     }
-`
+`;

@@ -1,11 +1,11 @@
-import Stars from '../styled/Stars'
+import Stars from '../styled/Stars';
 
 type Props = {
-    score: number // range 0 - 100
-    primaryColor: string
-    secondaryColor: string
-    size?: string
-}
+    score: number; // range 0 - 100
+    primaryColor: string;
+    secondaryColor: string;
+    size?: string;
+};
 
 const StarsComponent: React.FC<Props> = ({ score, primaryColor, secondaryColor, size = '1.8rem' }: Props) => {
     return (
@@ -16,7 +16,7 @@ const StarsComponent: React.FC<Props> = ({ score, primaryColor, secondaryColor, 
             starSize={size}
             aria-label={`Rating of this product is ${score}%.`}
         />
-    )
-}
+    );
+};
 
-export default StarsComponent
+export default StarsComponent;

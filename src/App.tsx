@@ -1,10 +1,10 @@
-import { StylesProvider, ThemeProvider } from '@material-ui/core'
-import { Switch, Route, Redirect, BrowserRouter as Router } from 'react-router-dom'
-import { addRecipe, recipe, recipes, root } from './links'
-import AddRecipe from './pages/AddRecipe'
-import RecipeDetail from './pages/RecipeDetail'
-import Recipes from './pages/Recipes'
-import theme from './theme'
+import { StylesProvider, ThemeProvider } from '@material-ui/core';
+import { Switch, Route, Redirect, BrowserRouter as Router } from 'react-router-dom';
+import { addRecipe, recipe, recipes, root } from './links';
+import AddRecipe from './pages/AddRecipe';
+import RecipeDetail from './pages/RecipeDetail';
+import Recipes from './pages/Recipes';
+import theme from './theme';
 
 function App() {
     return (
@@ -26,7 +26,7 @@ function App() {
                 </Router>
             </StylesProvider>
         </ThemeProvider>
-    )
+    );
 }
 
-export default App
+export default App;
